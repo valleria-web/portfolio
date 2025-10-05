@@ -11,22 +11,22 @@ export default function Home() {
   const projects = [
     {
       title: "Geo Pixel Map",
-      desc: "A Minimalistic, Real-Time Global Status Visualization Tool",
-      tags: ["Next.js", "Leaflet", "MongoDB"],
+      desc: "A Minimalistic and collaborative Real-Time Global Status Visualization Tool, Ephemeral art, colorful, and offers a live snapshot of the emotional and productive state of communities around the globe. No accounts, no storage of personal data. Just pixels with purpose",
+      tags: ["Next.js", "Leaflet", "MongoDB", "Real-Time Visualization Tool"],
       image: "/geoPixelMap.png",
       link: "https://geo-pixel-map.vercel.app/",
     },
     {
-      title: "Timeline MVC",
-      desc: "Dynamic timeline built from Markdown → objects.",
-      tags: ["Next.js", "OOP", "Markdown"],
-      link: "https://odaee-timeline.vercel.app/",
+      title: "Bitcoin Blockchain Prototype",
+      desc: "A JavaScript-based blockchain simulation featuring mining, wallet management, transactions, and cryptocurrency supply tracking. This project is designed for learning purposes and mimics the behavior of a simplified cryptocurrency system like Bitcoin.",
+      tags: ["Mempool Management", "Mining Simulation", "Wallets and Transactions", "Supply Tracking"],
+      link: "",
     },
 
     {
       title: "Sales Dashboard",
-      desc: "KPIs, Top 10 and range-based analytics.",
-      tags: ["Charts", "API", "Node"],
+      desc: "Sales Dashboard is a web application that transforms raw customer, product, and sales data into a clear and interactive visualization. The application allows to monitor sales performance, identify behavioral patterns, and perform detailed analysis within a given timeframe.",
+      tags: ["Charts", "API", "Node", "KPIs", "Range-based analytics."],
       link: "/sales-dashboard",
     },
     {
@@ -121,10 +121,11 @@ export default function Home() {
               </h1>
               <p className="mt-4 text-slate-300 max-w-prose">
                 Software engineering student building web experiences with{" "}
-                <strong className="text-white">JavaScript (OOP)</strong>,{" "}
-                <strong className="text-white">Next.js</strong>, and exploring{" "}
-                <strong className="text-white">AI & Blockchain</strong>.
+                <strong className="text-white">JavaScript (OOP), Next.js and AI.</strong>
+                <br />
+                Exploring Blockchain and Open Banking
               </p>
+
               <div className="mt-6 flex flex-wrap gap-3">
                 <a
                   href="#projects"
@@ -153,26 +154,6 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* SKILLS */}
-      <section
-        id="skills"
-        className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16"
-      >
-        <h2 className="text-2xl sm:text-3xl font-bold mb-8 text-center">
-          🛠️ Skills & Technologies
-        </h2>
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 text-center">
-          {skills.map((skill) => (
-            <div
-              key={skill}
-              className="rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-slate-200 hover:bg-white/[0.08] transition"
-            >
-              {skill}
-            </div>
-          ))}
         </div>
       </section>
 
@@ -233,6 +214,26 @@ export default function Home() {
                 </div>
               </div>
             </article>
+          ))}
+        </div>
+      </section>
+
+      {/* SKILLS */}
+      <section
+        id="skills"
+        className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16"
+      >
+        <h2 className="text-2xl sm:text-3xl font-bold mb-8 text-center">
+          🛠️ Skills & Technologies
+        </h2>
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 text-center">
+          {skills.map((skill) => (
+            <div
+              key={skill}
+              className="rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-slate-200 hover:bg-white/[0.08] transition"
+            >
+              {skill}
+            </div>
           ))}
         </div>
       </section>
