@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Home() {
   const nav = [
     { label: "Projects", href: "#projects" },
-    { label: "About", href: "#about" },
+    { label: "About", href: "#hero" },
     { label: "Skills", href: "#skills" },
     { label: "Contact", href: "#contact" },
   ];
@@ -239,7 +239,9 @@ export default function Home() {
       </section>
 
       {/* CONNECT */}
-      <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 text-center border-t border-white/10 mt-16">
+      <section 
+      id="contact"
+      className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 text-center border-t border-white/10 mt-16">
         <h2 className="text-2xl sm:text-3xl font-bold mb-6">
           Shall we build something together?
         </h2>
