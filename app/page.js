@@ -14,7 +14,7 @@ export default function Home() {
       desc: "A Minimalistic, Real-Time Global Status Visualization Tool",
       tags: ["Next.js", "Leaflet", "MongoDB"],
       image: "/geoPixelMap.png",
-      link: "/geo-pixel-map",
+      link: "https://geo-pixel-map.vercel.app/",
     },
     {
       title: "Timeline MVC",
