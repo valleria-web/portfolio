@@ -1,4 +1,6 @@
+"use client";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   const nav = [
@@ -15,6 +17,7 @@ export default function Home() {
       tags: ["Next.js", "Leaflet", "MongoDB", "Real-Time Visualization Tool"],
       image: "/geoPixelMap.png",
       link: "https://geo-pixel-map.vercel.app/",
+      internalLink: "/geo-pixel-map",
     },
     {
       title: "Bitcoin Blockchain Prototype",
@@ -175,19 +178,19 @@ export default function Home() {
               key={p.title}
               className="group rounded-2xl border border-white/10 bg-white/5 hover:bg-white/[0.07] transition overflow-hidden"
             >
+              {/* Imagen con enlace externo si existe */}
               <a
                 href={p.link || "#"}
                 target={p.link ? "_blank" : "_self"}
                 rel={p.link ? "noopener noreferrer" : undefined}
                 className="block"
               >
-
-                <div className="aspect-video overflow-hidden rounded-xl border border-white/10">
+                <div className="aspect-video max-w-md mx-auto overflow-hidden rounded-xl border border-white/10">
                   {p.image ? (
                     <Image
                       src={p.image}
                       alt={p.title}
-                      width={800}
+                      width={600}
                       height={450}
                       className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
                     />
@@ -197,11 +200,14 @@ export default function Home() {
                 </div>
               </a>
 
+              {/* Contenido */}
               <div className="p-4">
                 <h3 className="mt-2 text-lg font-semibold group-hover:text-white">
                   {p.title}
                 </h3>
                 <p className="text-sm text-slate-300">{p.desc}</p>
+
+                {/* Tags */}
                 <div className="mt-3 flex flex-wrap gap-2">
                   {p.tags.map((t) => (
                     <span
@@ -211,6 +217,29 @@ export default function Home() {
                       {t}
                     </span>
                   ))}
+                </div>
+
+                {/* Botones de enlace interno y externo */}
+                <div className="mt-4 flex gap-3">
+                  {p.internalLink && (
+                    <Link
+                      href={p.internalLink}
+                      className="rounded-lg border border-white/20 px-3 py-1.5 text-sm text-white hover:bg-white/10 transition"
+                    >
+                      View Details
+                    </Link>
+                  )}
+
+                  {p.link && (
+                    <a
+                      href={p.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="rounded-lg bg-fuchsia-600 px-3 py-1.5 text-sm text-white hover:brightness-110 transition"
+                    >
+                      Visit Site
+                    </a>
+                  )}
                 </div>
               </div>
             </article>
@@ -239,9 +268,9 @@ export default function Home() {
       </section>
 
       {/* CONNECT */}
-      <section 
-      id="contact"
-      className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 text-center border-t border-white/10 mt-16">
+      <section
+        id="contact"
+        className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 text-center border-t border-white/10 mt-16">
         <h2 className="text-2xl sm:text-3xl font-bold mb-6">
           Shall we build something together?
         </h2>
