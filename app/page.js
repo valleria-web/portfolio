@@ -282,7 +282,7 @@ export default function Home() {
       {/* FOOTER */}
       <footer className="border-t border-white/10">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between text-sm text-slate-400">
-          <p>© {new Date().getFullYear()} VdSR. Built with ❤️ and Next.js.</p>
+          <p>{new Date().getFullYear()} VdSR. Built with ❤️ and Next.js.</p>
           <a href="#hero" className="hover:text-slate-200">
             Back to top ↑
           </a>
