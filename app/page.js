@@ -30,14 +30,18 @@ export default function Home() {
       link: "/sales-dashboard",
     },
     {
-      title: "Search Service",
-      desc: "Modular search engine (Year/Event/Participant/Award).",
-      tags: ["Architecture", "Patterns", "OOP"],
+      title: "The Digital Character Cafe",
+      desc: "Where Bitcoin NFTs come to life with unique personalities and stories.",
+      tags: ["Blog", "Video Edition"],
+      image: "/the-digital-character-cafe.jpg",
+      link: "https://the-digital-character-cafe.vercel.app/",
     },
     {
-      title: "Roadmap Tree",
-      desc: "Interactive roadmap tree visualization.",
-      tags: ["D3-like", "Interaction"],
+      title: "Ordinals Observatory",
+      desc: "Ordinals on Bitcoin",
+      tags: ["Blog", "NFTs"],
+      image: "/ordinals-observatory.png",
+      link: "https://portal-ordinal.vercel.app/",
     },
     {
       title: "Portfolio",
@@ -148,16 +152,6 @@ export default function Home() {
                 )}
               </div>
             </div>
-            <div className="relative">
-              <div className="aspect-[4/3] w-full rounded-3xl border border-white/10 bg-gradient-to-br from-slate-800 to-slate-900 p-1 shadow-2xl">
-                <div className="h-full w-full rounded-[1.3rem] bg-[radial-gradient(120%_120%_at_0%_0%,rgba(236,72,153,0.25),rgba(6,182,212,0.12)_40%,transparent_70%)]" />
-              </div>
-              <div className="absolute -bottom-6 -left-6 rotate-[-3deg] rounded-2xl border border-white/10 bg-slate-900/90 p-4 shadow-xl">
-                <p className="text-sm text-slate-300">
-                  Clean design • performance • DX • accessibility
-                </p>
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -246,11 +240,10 @@ export default function Home() {
       {/* CONNECT */}
       <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 text-center border-t border-white/10 mt-16">
         <h2 className="text-2xl sm:text-3xl font-bold mb-6">
-          🌐 Connect With Me
+          Shall we build something together?
         </h2>
         <p className="text-slate-300 max-w-2xl mx-auto mb-8">
-          Follow my journey, explore my code, or get in touch through these
-          platforms:
+          Explore my code or get in touch, I usually reply fast.
         </p>
 
         <div className="flex justify-center flex-wrap gap-4">
@@ -283,35 +276,6 @@ export default function Home() {
           >
             💼 LinkedIn
           </a>
-        </div>
-      </section>
-
-      {/* CONTACT */}
-      <section
-        id="contact"
-        className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16"
-      >
-        <div className="rounded-3xl border border-white/10 bg-gradient-to-br from-slate-900 to-slate-950 p-8 md:p-10 text-center">
-          <h2 className="text-2xl sm:text-3xl font-bold">
-            Shall we build something together?
-          </h2>
-          <p className="mt-2 text-slate-300 max-w-2xl mx-auto">
-            Send me a message and tell me your idea. I usually reply fast.
-          </p>
-          <div className="mt-6 flex flex-wrap items-center justify-center gap-3">
-            <a
-              href="mailto:hello@example.com"
-              className="rounded-full px-6 py-3 text-sm font-medium bg-gradient-to-r from-fuchsia-500 to-cyan-500 text-white shadow-lg shadow-fuchsia-500/20 hover:brightness-110 transition"
-            >
-              Contact by email
-            </a>
-            <a
-              href="#"
-              className="rounded-full px-6 py-3 text-sm font-medium border border-white/20 hover:border-white/40"
-            >
-              Download CV
-            </a>
-          </div>
         </div>
       </section>
 
