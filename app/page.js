@@ -37,7 +37,9 @@ export default function Home() {
       title: "Sales Dashboard",
       desc: "Sales Dashboard is a web application that transforms raw customer, product, and sales data into a clear and interactive visualization. The application allows to monitor sales performance, identify behavioral patterns, and perform detailed analysis within a given timeframe.",
       tags: ["Charts", "API", "Node", "KPIs", "Range-based analytics."],
-      link: "/sales-dashboard",
+      image: "/sales.png",
+      link: "https://sales-dashboard-next-zeta.vercel.app/dashboard",
+      internalLink: "/sales-dashboard",
     },
     {
       title: "The Digital Character Cafe",
