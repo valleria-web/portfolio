@@ -47,9 +47,11 @@ export default function Home() {
       link: "https://portal-ordinal.vercel.app/",
     },
     {
-      title: "Portfolio",
-      desc: "This site — clean and elegant code.",
-      tags: ["UI/UX", "Next.js"],
+      title: "Embedded Robotics Control System",
+      desc: "Full-stack embedded project connecting firmware, Node.js bridge, and remote app commands for real-time robot control.",
+      tags: ["C", "Embedded", "IoT", "Node.js"],
+      image: "/robot.jpg",
+      internalLink: "/EmbeddedEngineering",
     },
   ];
 
@@ -67,6 +69,11 @@ export default function Home() {
     "Smart Contracts (Solidity)",
     "Git & GitHub",
     "Vercel / Cloud Deployment",
+    "Embedded Engineering",
+    "C / C++",
+    "Arduino",
+    "Iot",
+    "WebSockets",
   ];
 
   return (
