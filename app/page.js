@@ -130,12 +130,10 @@ export default function Home() {
                 .
               </h1>
               <p className="mt-4 text-slate-300 max-w-prose">
-                Software engineering student building web experiences with{" "}
-                <strong className="text-white">JavaScript (OOP), Next.js and AI.</strong>
+                Software engineering student.{" "}
+                <strong className="text-white">Building with JavaScript, Next.js & AI.</strong>
                 <br />
-                Exploring Blockchain and Open Banking
-              </p>
-
+                Exploring Blockchain, Open Banking & Embedded Systems.</p>
               <div className="mt-6 flex flex-wrap gap-3">
                 <a
                   href="#projects"
