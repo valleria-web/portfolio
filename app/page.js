@@ -20,6 +20,13 @@ export default function Home() {
       internalLink: "/geo-pixel-map",
     },
     {
+      title: "Embedded Robotics Control System",
+      desc: "Full-stack embedded project connecting firmware, Node.js bridge, and remote app commands for real-time robot control.",
+      tags: ["C", "Embedded", "IoT", "Node.js"],
+      image: "/robot.jpg",
+      internalLink: "/EmbeddedEngineering",
+    },
+    {
       title: "Bitcoin Blockchain Prototype",
       desc: "A JavaScript-based blockchain simulation featuring mining, wallet management, transactions, and cryptocurrency supply tracking. This project is designed for learning purposes and mimics the behavior of a simplified cryptocurrency system like Bitcoin.",
       tags: ["Mempool Management", "Mining Simulation", "Wallets and Transactions", "Supply Tracking"],
@@ -45,13 +52,6 @@ export default function Home() {
       tags: ["Blog", "NFTs"],
       image: "/ordinals-observatory.png",
       link: "https://portal-ordinal.vercel.app/",
-    },
-    {
-      title: "Embedded Robotics Control System",
-      desc: "Full-stack embedded project connecting firmware, Node.js bridge, and remote app commands for real-time robot control.",
-      tags: ["C", "Embedded", "IoT", "Node.js"],
-      image: "/robot.jpg",
-      internalLink: "/EmbeddedEngineering",
     },
   ];
 
